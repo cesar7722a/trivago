@@ -9,6 +9,11 @@ import { GoArchive } from "react-icons/go";
 import { LuBedDouble } from "react-icons/lu";
 import { MdLocationPin } from "react-icons/md";
 import { CiCircleAlert } from "react-icons/ci";
+import { FaRegHeart } from "react-icons/fa";
+import { IoIosStarOutline } from "react-icons/io";
+import { FaAngleDown } from "react-icons/fa6";
+import { FaCheck } from "react-icons/fa6";
+import { FaEuroSign } from "react-icons/fa";
 
 function App() {
 
@@ -20,7 +25,7 @@ function App() {
           <ul>
             <li><RxCounterClockwiseClock />Visualizações recentes</li>
             <li><MdFavoriteBorder />Favoritos</li>
-            <li><FaGlobe />PT.E</li>
+            <li><FaGlobe />PT.<FaEuroSign /></li>
             <li><FaRegCircleUser />Fazer Login</li>
             <li><MdMenu />Menu</li>
           </ul>
@@ -70,7 +75,7 @@ function App() {
           <section>
             <h2><strong>Preço:</strong>por diária</h2>
             <section>
-              <span>E 1 - E 500 +</span>
+              <span>E 1 - <FaEuroSign /> 500 +</span>
               v
             </section>
           </section>
@@ -128,6 +133,49 @@ function App() {
         </div>
         <div>
           <p>Como o pagamento afeta a classificação<CiCircleAlert /></p>
+          <div>
+            <img src="" alt="" />
+            <div>
+              <section>
+                <span>Holiday Inn Express & Suites Miami Kendall, An Ihg Hotel </span><FaRegHeart />
+              </section>
+              <section>
+                <span><IoIosStarOutline /><IoIosStarOutline /><IoIosStarOutline /></span>
+                <span> Hotel</span>
+              </section>
+              <section>
+                <span>Kendall</span><FaAngleDown />
+              </section>
+              <section>
+                <span><strong>8.9 - Muito Bom </strong>(2011 avalições)</span><FaAngleDown />
+              </section>
+            </div>
+            <div>
+              <section>
+                <section>Holiday Inn Express</section>
+                <section>
+                  <span><FaCheck />cancelamento gratuito</span>
+                </section>
+                <section>
+                  <span><FaEuroSign /> 100</span>
+                  <button>Ver Oferta</button>
+                </section>
+              </section>
+              <section>
+                <section>
+                  <span>Country Inn & Suites</span>
+                  <span><FaEuroSign /> 64</span>
+                </section>
+                <section>
+                  <section>
+                    <span>Nosso Preço mais baixo:</span>
+                    <span><FaEuroSign />Morerooms</span>
+                  </section>
+                  <FaAngleDown />
+                </section>
+              </section>
+            </div>
+          </div>
         </div>
       </main>
     </>
