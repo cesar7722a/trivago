@@ -8,6 +8,7 @@ import { IoIosSearch } from "react-icons/io";
 import { GoArchive } from "react-icons/go";
 import { LuBedDouble } from "react-icons/lu";
 import { MdLocationPin } from "react-icons/md";
+import { CiCircleAlert } from "react-icons/ci";
 
 function App() {
 
@@ -124,6 +125,9 @@ function App() {
             <span>Encontramos <strong>1000</strong>+ hóteis em 324 sites</span>
             <span><MdLocationPin />Ver no mapa</span>
           </section>
+        </div>
+        <div>
+          <p>Como o pagamento afeta a classificação<CiCircleAlert /></p>
         </div>
       </main>
     </>
