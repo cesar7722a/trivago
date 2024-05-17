@@ -1,8 +1,9 @@
 import logoTrivago from "./assets/imagens/Trivago-Logo.jpg";
-import { FaGlobe } from "react-icons/fa6";
-import { MdMenu } from "react-icons/md";
-import { MdFavoriteBorder } from "react-icons/md";
-import { FaRegCircleUser } from "react-icons/fa6";
+import { CiHeart } from "react-icons/ci";
+import { TfiWorld } from "react-icons/tfi";
+import { LuEuro } from "react-icons/lu";
+import { HiOutlineUserCircle } from "react-icons/hi2";
+import { RiMenuLine } from "react-icons/ri";
 import { RxCounterClockwiseClock } from "react-icons/rx";
 import { IoIosSearch } from "react-icons/io";
 import { GoArchive } from "react-icons/go";
@@ -13,26 +14,46 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoIosStarOutline } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
-import { FaEuroSign } from "react-icons/fa";
 
 function App() {
 
   return (
-    <>
+    < div>
       <header>
-        <div>
-          <h1 className="w-8 h-8"><img src={logoTrivago} alt="Logo trivago" title="Logo trivago" /></h1>
-          <ul>
-            <li><RxCounterClockwiseClock />Visualizações recentes</li>
-            <li><MdFavoriteBorder />Favoritos</li>
-            <li><FaGlobe />PT.<FaEuroSign /></li>
-            <li><FaRegCircleUser />Fazer Login</li>
-            <li><MdMenu />Menu</li>
+        <div className="flex justify-between items-center h-13 px-44">
+          <h1 className="">
+            <img className="w-28 h-full" src={logoTrivago} alt="Logo trivago" title="Logo trivago" />
+          </h1>
+          <ul className="flex">
+            <li
+              className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5]">
+              <RxCounterClockwiseClock className="size-5" />
+              Visualizações recentes
+            </li>
+            <li
+              className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5]">
+              <CiHeart className="size-7" />
+              Favoritos
+            </li>
+            <li
+              className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5]">
+              <TfiWorld className="size-5" />
+              PT.
+              <LuEuro />
+            </li>
+            <li
+              className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5]">
+              <HiOutlineUserCircle className="size-6" />
+              Fazer Login
+            </li>
+            <li className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5]">
+              <RiMenuLine className="size-5" />
+              Menu
+            </li>
           </ul>
         </div>
         <hr />
         <div>
-
           <div>
             <section>
               <IoIosSearch />
@@ -75,7 +96,7 @@ function App() {
           <section>
             <h2><strong>Preço:</strong>por diária</h2>
             <section>
-              <span>E 1 - <FaEuroSign /> 500 +</span>
+              <span>E 1 - <LuEuro /> 500 +</span>
               v
             </section>
           </section>
@@ -157,19 +178,19 @@ function App() {
                   <span><FaCheck />cancelamento gratuito</span>
                 </section>
                 <section>
-                  <span><FaEuroSign /> 100</span>
+                  <span><LuEuro /> 100</span>
                   <button>Ver Oferta</button>
                 </section>
               </section>
               <section>
                 <section>
                   <span>Country Inn & Suites</span>
-                  <span><FaEuroSign /> 64</span>
+                  <span><LuEuro /> 64</span>
                 </section>
                 <section>
                   <section>
                     <span>Nosso Preço mais baixo:</span>
-                    <span><FaEuroSign />Morerooms</span>
+                    <span><LuEuro />Morerooms</span>
                   </section>
                   <FaAngleDown />
                 </section>
@@ -178,7 +199,7 @@ function App() {
           </div>
         </div>
       </main>
-    </>
+    </div>
   )
 }
 
