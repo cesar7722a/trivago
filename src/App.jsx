@@ -26,27 +26,35 @@ function App() {
           </h1>
           <ul className="flex">
             <li
-              className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5]">
-              <RxCounterClockwiseClock className="size-5" />
-              Visualizações recentes
+              className="flex flex-col justify-center  cursor-pointer
+              text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5] 
+              ">
+              <di className="flex items-center justify-start gap-1.5">
+                <RxCounterClockwiseClock className="size-5" />
+                Visualizações recentes
+              </di>
+              <div className="flex-none absolute mt-80 w-72 h-60 bg-[#FFF] rounded-md shadow-2xl 
+              invisible hover:visible">
+                <span className="flex-none">card</span>
+              </div>
             </li>
             <li
-              className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5]">
+              className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5] cursor-pointer">
               <CiHeart className="size-7" />
               Favoritos
             </li>
             <li
-              className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5]">
+              className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5] cursor-pointer">
               <TfiWorld className="size-5" />
               PT.
               <LuEuro />
             </li>
             <li
-              className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5]">
+              className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5] cursor-pointer">
               <HiOutlineUserCircle className="size-6" />
               Fazer Login
             </li>
-            <li className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5]">
+            <li className="flex items-center gap-1.5 text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5] cursor-pointer">
               <RiMenuLine className="size-5" />
               Menu
             </li>
