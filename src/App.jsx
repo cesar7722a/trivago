@@ -61,35 +61,35 @@ function App() {
           </ul>
         </div>
         <hr />
-        <div>
-          <div>
-            <section>
-              <IoIosSearch />
-              <section>
+        <div className="flex px-44 gap-2 h-12">
+          <div className="flex hover:bg-[#F3F4F5] px-2 hover:rounded-lg">
+            <section className="flex gap-2 items-center">
+              <IoIosSearch className="size-6 text-black cursor-pointer" />
+              <section className="flex flex-col">
                 <h2>Destino</h2>
                 <h3>Estado Unido da Amé...</h3>
               </section>
-              <span>x</span>
+              <span className="p-2 cursor-pointer">x</span>
             </section>
           </div>
 
-          <div>
-            <section>
+          <div className="flex gap-1.5 text-center items-center border border-x-black border-y-0 w-80 pl-1.5">
+            <section className="flex gap-2 items-center hover:bg-[#F3F4F5] hover:rounded-lg w-32 pl-2">
               <GoArchive />
-              <section>
+              <section className="">
                 <h2>Entada</h2>
-                <h3>ccolocar data</h3>
+                <h3>colocar data</h3>
               </section>
             </section>
-            <section></section>
-            <section>
+            <section className="w-0.5 h-8 bg-slate-400"></section>
+            <section className="hover:bg-[#F3F4F5] pl-2 w-44 flex flex-col justify-start">
               <h2>Saída</h2>
               <h3>colocar data</h3>
             </section>
           </div>
 
-          <div>
-            <section>
+          <div className="flex gap-4">
+            <section className="flex justify-start gap-2 items-center w-60 pl-2 border border-spacing-2">
               <LuBedDouble />
               <section>
                 <h2>Hóspedes e quartos</h2>
