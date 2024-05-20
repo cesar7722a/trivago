@@ -61,35 +61,35 @@ function App() {
           </ul>
         </div>
         <hr />
-        <div className="flex px-44 gap-2 h-12">
-          <div className="flex hover:bg-[#F3F4F5] px-2 hover:rounded-lg">
+        <div className="flex justify-start h-16 shadow-2xl mt-8 mx-44 rounded-md">
+          <div className="flex hover:bg-[#F3F4F5] hover:rounded-lg m-1">
             <section className="flex gap-2 items-center">
-              <IoIosSearch className="size-6 text-black cursor-pointer" />
+              <IoIosSearch className="text-black cursor-pointer size-7 w-9 font-bold" />
               <section className="flex flex-col">
-                <h2>Destino</h2>
-                <h3>Estado Unido da Amé...</h3>
+                <h2 className="text-[#6c707a] text-[12px]">Destino</h2>
+                <h3 className="text-[#0a1121] text-[14px] font-bold">Estado Unido da Amé...</h3>
               </section>
-              <span className="p-2 cursor-pointer">x</span>
+              <span className="p-2 cursor-pointer text-[#0a1121] font-bold">x</span>
             </section>
           </div>
 
-          <div className="flex gap-1.5 text-center items-center border border-x-black border-y-0 w-80 pl-1.5">
-            <section className="flex gap-2 items-center hover:bg-[#F3F4F5] hover:rounded-lg w-32 pl-2">
-              <GoArchive />
-              <section className="">
-                <h2>Entada</h2>
-                <h3>colocar data</h3>
+          <div className="flex items-center border border-x-[#dbdde1] border-y-0 w-80">
+            <section className="flex items-center hover:bg-[#F3F4F5] hover:rounded-lg w-36 m-1">
+              <GoArchive className="text-black cursor-pointer size-5 w-9 font-bold" />
+              <section>
+                <h2 className="flex flex-col text-sm/3">Entada</h2>
+                <h3 className="text-xs text-[#0a1121]">ter, 22/03/2012</h3>
               </section>
             </section>
-            <section className="w-0.5 h-8 bg-slate-400"></section>
-            <section className="hover:bg-[#F3F4F5] pl-2 w-44 flex flex-col justify-start">
-              <h2>Saída</h2>
-              <h3>colocar data</h3>
+            <section className="w-px h-8 bg-[#dbdde1]"></section>
+            <section className="hover:bg-[#F3F4F5] pl-2 w-36 flex flex-col h-full gap-1 justify-center hover:rounded-lg m-1">
+              <h2 className="flex flex-col text-sm/3">Saída</h2>
+              <strong className="text-xs">ter, 22/03/2012</strong>
             </section>
           </div>
 
           <div className="flex gap-4">
-            <section className="flex justify-start gap-2 items-center w-60 pl-2 border border-spacing-2">
+            <section className="flex justify-start gap-2 w-60 pl-2 border border-spacing-2">
               <LuBedDouble />
               <section>
                 <h2>Hóspedes e quartos</h2>
