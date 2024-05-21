@@ -99,8 +99,8 @@ function App() {
           </div>
         </div>
 
-        <div className="flex mx-52 gap-2 mt-10">
-          <section className="flex flex-col w-64 cursor-pointer">
+        <div className="flex mx-48 gap-2 mt-10">
+          <section className="flex flex-col w-72 cursor-pointer">
             <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Preço:</strong>por diária</h2>
             <section className="flex border border-[#dbdde1] 
             items-center justify-between px-2.5 py-1.5
