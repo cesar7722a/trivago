@@ -19,7 +19,7 @@ function App() {
   return (
     < div>
       <header>
-        <div className="flex justify-between items-center h-13 px-52">
+        <div className="flex justify-between items-center h-13 px-48">
           <h1 className="">
             <img className="w-28 h-full" src={logoTrivago} alt="Logo trivago" title="Logo trivago" />
           </h1>
@@ -60,20 +60,20 @@ function App() {
           </ul>
         </div>
         <hr />
-        <div className="flex justify-start h-16 shadow-[0_4px_10px_4px_rgba(0,0,0,0.2)] mt-8 mx-52 rounded-md">
+        <div className="flex justify-start h-15 shadow-[0_4px_10px_4px_rgba(0,0,0,0.2)] mt-8 mx-48 rounded-lg">
           <div className="flex hover:bg-[#F3F4F5] hover:rounded-lg m-1">
-            <section className="flex gap-2 items-center">
+            <section className="flex gap-2.5 items-center">
               <IoIosSearch className="text-black cursor-pointer size-7 w-9 font-bold" />
               <section className="flex flex-col">
                 <h2 className="text-[#6c707a] text-[12px]">Destino</h2>
                 <h3 className="text-[#0a1121] text-[14px] font-bold">Estado Unido da Amé...</h3>
               </section>
-              <span className="p-2.5 cursor-pointer text-[#0a1121] font-bold">X</span>
+              <span className="p-3 cursor-pointer text-[#0a1121] font-bold">X</span>
             </section>
           </div>
 
           <div className="flex items-center border border-x-[#dbdde1] border-y-0 w-80 cursor-pointer">
-            <section className="flex items-center gap-2.5 hover:bg-[#F3F4F5] hover:rounded-lg h-14 w-40 mx-1">
+            <section className="flex items-center gap-2.5 hover:bg-[#F3F4F5] hover:rounded-lg h-14 w-52 mx-1">
               <GoArchive className="text-black cursor-pointer size-5 w-9 font-bold" />
               <section className="flex flex-col w-28">
                 <h2 className="text-[#6c707a] text-[12px]">Entada</h2>
@@ -81,14 +81,14 @@ function App() {
               </section>
             </section>
             <section className="w-px h-8 bg-[#dbdde1]"></section>
-            <section className="hover:bg-[#F3F4F5] pl-2 w-40 flex flex-col h-14 justify-center hover:rounded-lg m-1">
+            <section className="hover:bg-[#F3F4F5] pl-2 w-44 flex flex-col h-14 justify-center hover:rounded-lg m-1">
               <h2 className="text-[#6c707a] text-[12px]">Saída</h2>
               <h3 className="text-[#0a1121] text-[14px] font-bold">ter, 22/03/2012</h3>
             </section>
           </div>
 
           <div className="flex gap-3 items-center">
-            <section className="flex items-center justify-start gap-3 w-52 pl-2 hover:bg-[#F3F4F5] my-1 ml-1 h-14 hover:rounded-lg cursor-pointer">
+            <section className="flex items-center justify-start gap-3 w-[14.6rem] pl-2 hover:bg-[#F3F4F5] my-1 ml-1 h-14 hover:rounded-lg cursor-pointer">
               <LuBedDouble className="size-5" />
               <section>
                 <h2 className="text-[#6c707a] text-[12px]">Hóspedes e quartos</h2>
