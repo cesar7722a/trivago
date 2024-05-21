@@ -14,7 +14,6 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoIosStarOutline } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
-
 function App() {
 
   return (
@@ -100,44 +99,54 @@ function App() {
           </div>
         </div>
 
-        <div>
-          <section>
-            <h2><strong>Preço:</strong>por diária</h2>
-            <section>
-              <span>E 1 - <LuEuro /> 500 +</span>
-              v
+        <div className="flex mx-52 gap-2 mt-10">
+          <section className="flex flex-col w-64 cursor-pointer">
+            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Preço:</strong>por diária</h2>
+            <section className="flex border border-[#dbdde1] 
+            items-center justify-between px-2.5 py-1.5
+            rounded-3xl">
+              <span className="flex gap-1 items-center text-[14px]"><LuEuro />1 -<LuEuro />500 +</span>
+              <FaAngleDown />
             </section>
           </section>
 
-          <section>
-            <h2><strong>Filtros</strong></h2>
-            <section>
-              <span>Escolher</span>
-              v
+          <section className="w-40 cursor-pointer">
+            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Filtros</strong></h2>
+            <section className="flex border border-[#dbdde1] 
+            items-center justify-between px-2.5 py-1.5
+            rounded-3xl">
+              <span className="text-[14px]">Escolher</span>
+              <FaAngleDown />
             </section>
           </section>
 
-          <section>
-            <h2><strong>Avaliação</strong></h2>
-            <section>
-              <span>Todas</span>
-              v
+          <section className="w-40 cursor-pointer">
+            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Avaliação</strong></h2>
+            <section className="flex border border-[#dbdde1] 
+            items-center justify-between px-2.5 py-1.5
+            rounded-3xl">
+              <span className="text-[14px]">Todas</span>
+              <FaAngleDown />
             </section>
           </section>
 
-          <section>
-            <h2><strong>Tipo</strong></h2>
-            <section>
-              <span>Escolher</span>
-              v
+          <section className="w-40 cursor-pointer">
+            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Tipo</strong></h2>
+            <section className="flex border border-[#dbdde1] 
+            items-center justify-between px-2.5 py-1.5
+            rounded-3xl">
+              <span className="text-[14px]">Escolher</span>
+              <FaAngleDown />
             </section>
           </section>
 
-          <section>
-            <h2><strong>Localização</strong></h2>
-            <section>
-              <span>Estados Unidos d...</span>
-              v
+          <section className="w-40 cursor-not-allowed">
+            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121] cursor-not-allowed"><strong>Localização</strong></h2>
+            <section className="flex border border-[#dbdde1] 
+            items-center justify-between px-2.5 py-1.5
+            rounded-3xl">
+              <span className="text-[14px]">Estados Unidos d...</span>
+              <FaAngleDown />
             </section>
           </section>
 
