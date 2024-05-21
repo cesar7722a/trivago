@@ -152,7 +152,7 @@ function App() {
 
         </div>
       </header>
-      <main>
+      <main className="bg-[#dbdde1] mt-4">
         <div>
           <section>
             <span>Ordenar por</span>
