@@ -20,7 +20,7 @@ function App() {
   return (
     < div>
       <header>
-        <div className="flex justify-between items-center h-13 px-44">
+        <div className="flex justify-between items-center h-13 px-52">
           <h1 className="">
             <img className="w-28 h-full" src={logoTrivago} alt="Logo trivago" title="Logo trivago" />
           </h1>
@@ -61,7 +61,7 @@ function App() {
           </ul>
         </div>
         <hr />
-        <div className="flex justify-start h-16 shadow-2xl mt-8 mx-44 rounded-md">
+        <div className="flex justify-start h-16 shadow-2xl mt-8 mx-52 rounded-md">
           <div className="flex hover:bg-[#F3F4F5] hover:rounded-lg m-1">
             <section className="flex gap-2 items-center">
               <IoIosSearch className="text-black cursor-pointer size-7 w-9 font-bold" />
@@ -69,7 +69,7 @@ function App() {
                 <h2 className="text-[#6c707a] text-[12px]">Destino</h2>
                 <h3 className="text-[#0a1121] text-[14px] font-bold">Estado Unido da Amé...</h3>
               </section>
-              <span className="p-2.5 cursor-pointer text-[#0a1121] font-bold">x</span>
+              <span className="p-2.5 cursor-pointer text-[#0a1121] font-bold">X</span>
             </section>
           </div>
 
@@ -88,8 +88,8 @@ function App() {
             </section>
           </div>
 
-          <div className="flex gap-12 items-center">
-            <section className="flex items-center justify-start gap-2.5 w-60 pl-2 hover:bg-[#F3F4F5] my-1 ml-1 h-14 hover:rounded-lg cursor-pointer">
+          <div className="flex gap-3 items-center">
+            <section className="flex items-center justify-start gap-3 w-52 pl-2 hover:bg-[#F3F4F5] my-1 ml-1 h-14 hover:rounded-lg cursor-pointer">
               <LuBedDouble className="size-5" />
               <section>
                 <h2 className="text-[#6c707a] text-[12px]">Hóspedes e quartos</h2>
