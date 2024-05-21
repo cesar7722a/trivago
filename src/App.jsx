@@ -61,7 +61,7 @@ function App() {
           </ul>
         </div>
         <hr />
-        <div className="flex justify-start h-16 shadow-2xl mt-8 mx-52 rounded-md">
+        <div className="flex justify-start h-16 shadow-[0_4px_10px_4px_rgba(0,0,0,0.2)] mt-8 mx-52 rounded-md">
           <div className="flex hover:bg-[#F3F4F5] hover:rounded-lg m-1">
             <section className="flex gap-2 items-center">
               <IoIosSearch className="text-black cursor-pointer size-7 w-9 font-bold" />
