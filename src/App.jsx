@@ -69,34 +69,34 @@ function App() {
                 <h2 className="text-[#6c707a] text-[12px]">Destino</h2>
                 <h3 className="text-[#0a1121] text-[14px] font-bold">Estado Unido da Amé...</h3>
               </section>
-              <span className="p-2 cursor-pointer text-[#0a1121] font-bold">x</span>
+              <span className="p-2.5 cursor-pointer text-[#0a1121] font-bold">x</span>
             </section>
           </div>
 
-          <div className="flex items-center border border-x-[#dbdde1] border-y-0 w-80">
-            <section className="flex items-center hover:bg-[#F3F4F5] hover:rounded-lg w-36 m-1">
+          <div className="flex items-center border border-x-[#dbdde1] border-y-0 w-80 cursor-pointer">
+            <section className="flex items-center gap-2.5 hover:bg-[#F3F4F5] hover:rounded-lg h-14 w-40 mx-1">
               <GoArchive className="text-black cursor-pointer size-5 w-9 font-bold" />
-              <section>
-                <h2 className="flex flex-col text-sm/3">Entada</h2>
-                <h3 className="text-xs text-[#0a1121]">ter, 22/03/2012</h3>
+              <section className="flex flex-col w-28">
+                <h2 className="text-[#6c707a] text-[12px]">Entada</h2>
+                <h3 className="text-[#0a1121] text-[14px] font-bold">ter, 22/03/2012</h3>
               </section>
             </section>
             <section className="w-px h-8 bg-[#dbdde1]"></section>
-            <section className="hover:bg-[#F3F4F5] pl-2 w-36 flex flex-col h-full gap-1 justify-center hover:rounded-lg m-1">
-              <h2 className="flex flex-col text-sm/3">Saída</h2>
-              <strong className="text-xs">ter, 22/03/2012</strong>
+            <section className="hover:bg-[#F3F4F5] pl-2 w-40 flex flex-col h-14 justify-center hover:rounded-lg m-1">
+              <h2 className="text-[#6c707a] text-[12px]">Saída</h2>
+              <h3 className="text-[#0a1121] text-[14px] font-bold">ter, 22/03/2012</h3>
             </section>
           </div>
 
-          <div className="flex gap-4">
-            <section className="flex justify-start gap-2 w-60 pl-2 border border-spacing-2">
-              <LuBedDouble />
+          <div className="flex gap-12 items-center">
+            <section className="flex items-center justify-start gap-2.5 w-60 pl-2 hover:bg-[#F3F4F5] my-1 ml-1 h-14 hover:rounded-lg cursor-pointer">
+              <LuBedDouble className="size-5" />
               <section>
-                <h2>Hóspedes e quartos</h2>
-                <h3>2 hóspedes, 1 quarto</h3>
+                <h2 className="text-[#6c707a] text-[12px]">Hóspedes e quartos</h2>
+                <h3 className="text-[#0a1121] text-[14px] font-bold">2 hóspedes, 1 quarto</h3>
               </section>
             </section>
-            <button>Pesquisar</button>
+            <button className="bg-[#0077c2] py-[12px] px-[32px] text-[16px] text-[#fff] font-bold rounded-lg">Pesquisar</button>
           </div>
         </div>
 
