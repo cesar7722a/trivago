@@ -152,11 +152,13 @@ function App() {
 
         </div>
       </header>
-      <main className="bg-[#dbdde1] mt-4">
+      <main className="bg-gray-100 mt-4">
         <div className="mx-48 flex justify-between items-center pt-5">
           <section className="flex gap-1.5 items-center">
             <span className="text-[14px] text-[#0a1121] font-bold cursor-default">Ordenar por</span>
-            <select name="" id="" className="pt-1 pr-2 pb-3 pl-4 rounded-lg outline-none border-spacing-2 border-[#dbdde1] ">
+            <select name="" id=""
+              className="cursor-pointer rounded-lg h-9 bg-white
+                       w-44 text-[14px] outline-none border border-gray-300 px-1">
               <option value="">Sugestões</option>
               <option value="">Somente Preço</option>
               <option value="">Avaliação e Sugestões</option>
