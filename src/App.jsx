@@ -175,16 +175,19 @@ function App() {
               <strong>324</strong>
               sites
             </span>
-            <span className=" bg-auto bg-no-repeat bg-center border border-white px-16 py-1 rounded-lg 
+            <span className="bg-center border border-white px-16 py-2.5 rounded-lg 
             cursor-pointer">
-              <span className="flex items-center bg-white py-2 px-4 rounded-lg gap-2">
+              <span className="flex items-center text-[14px] font-bold text-[#0a1121] bg-white py-1 px-4 rounded-lg gap-2 border border-[#0a1121]">
                 <MdLocationPin className="size-5" />Ver no mapa
               </span>
             </span>
           </section>
         </div>
-        <div>
-          <p>Como o pagamento afeta a classificação<CiCircleAlert /></p>
+        <div className="flex flex-col mx-44">
+          <p className="flex items-center gap-1 text-[12px] text-[#6c707a] cursor-pointer mb-0.5">
+            Como o pagamento afeta a classificação
+            <CiCircleAlert className="size-5" />
+          </p>
           <div>
             <img src="" alt="" />
             <div>
