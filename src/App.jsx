@@ -1,5 +1,5 @@
 import logoTrivago from "./assets/imagens/Trivago-Logo.jpg";
-// import map from "./assets/imagens/map.jpeg";
+import hotel_1 from "./assets/imagens/imagens hotel/0e134be9f0673d77a2381165da01d6c4070146eb7b1e67777a516d664e56.jpeg"
 import { CiHeart } from "react-icons/ci";
 import { TfiWorld } from "react-icons/tfi";
 import { LuEuro } from "react-icons/lu";
@@ -154,7 +154,7 @@ function App() {
         </div>
       </header>
       <main className="bg-gray-100 mt-4">
-        <div className="mx-48 flex justify-between items-center pt-5">
+        <div className="mx-48 flex justify-between items-center pt-5 mb-4">
           <section className="flex gap-1.5 items-center">
             <span className="text-[14px] text-[#0a1121] font-bold cursor-default">Ordenar por</span>
             <select name="" id=""
@@ -183,46 +183,71 @@ function App() {
             </span>
           </section>
         </div>
-        <div className="flex flex-col mx-44">
+        <div className="flex flex-col mx-48">
           <p className="flex items-center gap-1 text-[12px] text-[#6c707a] cursor-pointer mb-0.5">
             Como o pagamento afeta a classificação
             <CiCircleAlert className="size-5" />
           </p>
-          <div>
-            <img src="" alt="" />
-            <div>
-              <section>
-                <span>Holiday Inn Express & Suites Miami Kendall, An Ihg Hotel </span><FaRegHeart />
+          <div className="flex h-48 border shadow-lg rounded-lg gap-2 bg-white">
+            <div className="rounded-tl-lg rounded-bl-lg h-auto">
+              <img src={hotel_1} alt="" className="h-full w-72 rounded-tl-lg rounded-bl-lg" />
+            </div>
+            <div className="flex flex-col w-2/4 py-2 gap-3">
+              <section className="flex justify-between items-center">
+                <span className="text-[20px] font-bold">Holiday Inn Express & Suites Miami...</span>
+                <FaRegHeart className="size-5 hover:text-red-700 cursor-pointer" />
               </section>
-              <section>
-                <span><IoIosStarOutline /><IoIosStarOutline /><IoIosStarOutline /></span>
-                <span> Hotel</span>
+              <section className="flex gap-1.5 items-center">
+                <span className="flex">
+                  <IoIosStarOutline />
+                  <IoIosStarOutline />
+                  <IoIosStarOutline />
+                </span>
+                <span>Hotel</span>
               </section>
-              <section>
-                <span>Kendall</span><FaAngleDown />
+              <section className="flex justify-between items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
+                <span>Kendall</span>
+                <FaAngleDown />
               </section>
-              <section>
-                <span><strong>8.9 - Muito Bom </strong>(2011 avalições)</span><FaAngleDown />
+              <section className="flex justify-between items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
+                <span>
+                  <strong>8.9 - Muito Bom </strong>
+                  (2011 avalições)
+                </span>
+                <FaAngleDown />
               </section>
             </div>
-            <div>
-              <section>
-                <section>Holiday Inn Express</section>
-                <section>
-                  <span><FaCheck />cancelamento gratuito</span>
+            <div className="flex flex-col w-96 p-2 pl-0">
+              <section className="border border-[#005f00] p-1 bg-gray-100 rounded-lg">
+                <section className="text-[12px] text-[#0a1121] font-bold">Holiday Inn Express</section>
+                <section className="flex gap-1">
+                  <span className="flex items-center text-[12px] text-[#005f00] font-bold gap-1">
+                    <FaCheck />
+                    cancelamento gratuito
+                  </span>
+                  <span className="flex items-center text-[12px] text-[#005f00] gap-1">
+                    <FaCheck />
+                    cancelamento gratuito
+                  </span>
                 </section>
-                <section>
-                  <span><LuEuro /> 100</span>
-                  <button>Ver Oferta</button>
+                <section className="flex items-center gap-4">
+                  <section className="flex flex-col">
+                    <span className="flex items-center text-lg font-bold"><LuEuro /> 100</span>
+                    <span className="flex items-center text-[11px] gap-1">
+                      17 noite por
+                      <strong className="flex items-center"><LuEuro />1.060</strong>
+                    </span>
+                  </section>
+                  <button className="bg-green-700 py-1.5 px-9">Ver Oferta</button>
                 </section>
               </section>
               <section>
-                <section>
+                <section className="flex">
                   <span>Country Inn & Suites</span>
                   <span><LuEuro /> 64</span>
                 </section>
                 <section>
-                  <section>
+                  <section className="flex">
                     <span>Nosso Preço mais baixo:</span>
                     <span><LuEuro />Morerooms</span>
                   </section>
