@@ -1,4 +1,5 @@
 import logoTrivago from "./assets/imagens/Trivago-Logo.jpg";
+// import map from "./assets/imagens/map.jpeg";
 import { CiHeart } from "react-icons/ci";
 import { TfiWorld } from "react-icons/tfi";
 import { LuEuro } from "react-icons/lu";
@@ -14,13 +15,12 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoIosStarOutline } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
-
 function App() {
 
   return (
     < div>
       <header>
-        <div className="flex justify-between items-center h-13 px-44">
+        <div className="flex justify-between items-center h-13 px-48">
           <h1 className="">
             <img className="w-28 h-full" src={logoTrivago} alt="Logo trivago" title="Logo trivago" />
           </h1>
@@ -61,93 +61,105 @@ function App() {
           </ul>
         </div>
         <hr />
-        <div>
-          <div>
-            <section>
-              <IoIosSearch />
-              <section>
-                <h2>Destino</h2>
-                <h3>Estado Unido da Amé...</h3>
+        <div className="flex justify-start h-15 shadow-[0_4px_10px_4px_rgba(0,0,0,0.2)] mt-8 mx-48 rounded-lg">
+          <div className="flex hover:bg-[#F3F4F5] hover:rounded-lg m-1">
+            <section className="flex gap-2.5 items-center">
+              <IoIosSearch className="text-black cursor-pointer size-7 w-9 font-bold" />
+              <section className="flex flex-col">
+                <h2 className="text-[#6c707a] text-[12px]">Destino</h2>
+                <h3 className="text-[#0a1121] text-[14px] font-bold">Estado Unido da Amé...</h3>
               </section>
-              <span>x</span>
+              <span className="p-3 cursor-pointer text-[#0a1121] font-bold">X</span>
             </section>
           </div>
 
-          <div>
-            <section>
-              <GoArchive />
-              <section>
-                <h2>Entada</h2>
-                <h3>ccolocar data</h3>
+          <div className="flex items-center border border-x-[#dbdde1] border-y-0 w-80 cursor-pointer">
+            <section className="flex items-center gap-2.5 hover:bg-[#F3F4F5] hover:rounded-lg h-14 w-52 mx-1">
+              <GoArchive className="text-black cursor-pointer size-5 w-9 font-bold" />
+              <section className="flex flex-col w-28">
+                <h2 className="text-[#6c707a] text-[12px]">Entada</h2>
+                <h3 className="text-[#0a1121] text-[14px] font-bold">ter, 22/03/2012</h3>
               </section>
             </section>
-            <section></section>
-            <section>
-              <h2>Saída</h2>
-              <h3>colocar data</h3>
+            <section className="w-px h-8 bg-[#dbdde1]"></section>
+            <section className="hover:bg-[#F3F4F5] pl-2 w-44 flex flex-col h-14 justify-center hover:rounded-lg m-1">
+              <h2 className="text-[#6c707a] text-[12px]">Saída</h2>
+              <h3 className="text-[#0a1121] text-[14px] font-bold">ter, 22/03/2012</h3>
             </section>
           </div>
 
-          <div>
-            <section>
-              <LuBedDouble />
+          <div className="flex gap-3 items-center">
+            <section className="flex items-center justify-start gap-3 w-[14.6rem] pl-2 hover:bg-[#F3F4F5] my-1 ml-1 h-14 hover:rounded-lg cursor-pointer">
+              <LuBedDouble className="size-5" />
               <section>
-                <h2>Hóspedes e quartos</h2>
-                <h3>2 hóspedes, 1 quarto</h3>
+                <h2 className="text-[#6c707a] text-[12px]">Hóspedes e quartos</h2>
+                <h3 className="text-[#0a1121] text-[14px] font-bold">2 hóspedes, 1 quarto</h3>
               </section>
             </section>
-            <button>Pesquisar</button>
+            <button className="bg-[#0077c2] py-[12px] px-[32px] text-[16px] text-[#fff] font-bold rounded-lg">Pesquisar</button>
           </div>
         </div>
 
-        <div>
-          <section>
-            <h2><strong>Preço:</strong>por diária</h2>
-            <section>
-              <span>E 1 - <LuEuro /> 500 +</span>
-              v
+        <div className="flex mx-48 gap-2 mt-10">
+          <section className="flex flex-col w-72 cursor-pointer">
+            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Preço:</strong>por diária</h2>
+            <section className="flex border border-[#dbdde1] 
+            items-center justify-between px-2.5 py-1.5
+            rounded-3xl">
+              <span className="flex gap-1 items-center text-[14px]"><LuEuro />1 -<LuEuro />500 +</span>
+              <FaAngleDown />
             </section>
           </section>
 
-          <section>
-            <h2><strong>Filtros</strong></h2>
-            <section>
-              <span>Escolher</span>
-              v
+          <section className="w-40 cursor-pointer">
+            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Filtros</strong></h2>
+            <section className="flex border border-[#dbdde1] 
+            items-center justify-between px-2.5 py-1.5
+            rounded-3xl">
+              <span className="text-[14px]">Escolher</span>
+              <FaAngleDown />
             </section>
           </section>
 
-          <section>
-            <h2><strong>Avaliação</strong></h2>
-            <section>
-              <span>Todas</span>
-              v
+          <section className="w-40 cursor-pointer">
+            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Avaliação</strong></h2>
+            <section className="flex border border-[#dbdde1] 
+            items-center justify-between px-2.5 py-1.5
+            rounded-3xl">
+              <span className="text-[14px]">Todas</span>
+              <FaAngleDown />
             </section>
           </section>
 
-          <section>
-            <h2><strong>Tipo</strong></h2>
-            <section>
-              <span>Escolher</span>
-              v
+          <section className="w-40 cursor-pointer">
+            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Tipo</strong></h2>
+            <section className="flex border border-[#dbdde1] 
+            items-center justify-between px-2.5 py-1.5
+            rounded-3xl">
+              <span className="text-[14px]">Escolher</span>
+              <FaAngleDown />
             </section>
           </section>
 
-          <section>
-            <h2><strong>Localização</strong></h2>
-            <section>
-              <span>Estados Unidos d...</span>
-              v
+          <section className="w-40 cursor-not-allowed">
+            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121] cursor-not-allowed"><strong>Localização</strong></h2>
+            <section className="flex border border-[#dbdde1] 
+            items-center justify-between px-2.5 py-1.5
+            rounded-3xl">
+              <span className="text-[14px]">Estados Unidos d...</span>
+              <FaAngleDown />
             </section>
           </section>
 
         </div>
       </header>
-      <main>
-        <div>
-          <section>
-            <span>Ordenar por</span>
-            <select name="" id="">
+      <main className="bg-gray-100 mt-4">
+        <div className="mx-48 flex justify-between items-center pt-5">
+          <section className="flex gap-1.5 items-center">
+            <span className="text-[14px] text-[#0a1121] font-bold cursor-default">Ordenar por</span>
+            <select name="" id=""
+              className="cursor-pointer rounded-lg h-9 bg-white
+                       w-44 text-[14px] outline-none border border-gray-300 px-1">
               <option value="">Sugestões</option>
               <option value="">Somente Preço</option>
               <option value="">Avaliação e Sugestões</option>
@@ -155,13 +167,27 @@ function App() {
               <option value="">Somente avaliação</option>
             </select>
           </section>
-          <section>
-            <span>Encontramos <strong>1000</strong>+ hóteis em 324 sites</span>
-            <span><MdLocationPin />Ver no mapa</span>
+          <section className="flex gap-4 items-center">
+            <span className="text-[14px] flex gap-1 text-[#0a1121]">
+              Encontramos
+              <strong>1000+</strong>
+              hóteis em
+              <strong>324</strong>
+              sites
+            </span>
+            <span className="bg-center border border-white px-16 py-2.5 rounded-lg 
+            cursor-pointer">
+              <span className="flex items-center text-[14px] font-bold text-[#0a1121] bg-white py-1 px-4 rounded-lg gap-2 border border-[#0a1121]">
+                <MdLocationPin className="size-5" />Ver no mapa
+              </span>
+            </span>
           </section>
         </div>
-        <div>
-          <p>Como o pagamento afeta a classificação<CiCircleAlert /></p>
+        <div className="flex flex-col mx-44">
+          <p className="flex items-center gap-1 text-[12px] text-[#6c707a] cursor-pointer mb-0.5">
+            Como o pagamento afeta a classificação
+            <CiCircleAlert className="size-5" />
+          </p>
           <div>
             <img src="" alt="" />
             <div>
