@@ -1,4 +1,5 @@
 import logoTrivago from "./assets/imagens/Trivago-Logo.jpg";
+// import map from "./assets/imagens/map.jpeg";
 import { CiHeart } from "react-icons/ci";
 import { TfiWorld } from "react-icons/tfi";
 import { LuEuro } from "react-icons/lu";
@@ -166,10 +167,19 @@ function App() {
               <option value="">Somente avaliação</option>
             </select>
           </section>
-          <section className="flex gap-16">
-            <span>Encontramos <strong>1000</strong>+ hóteis em 324 sites</span>
-            <span>
-              <span className="flex items-center"><MdLocationPin />Ver no mapa</span>
+          <section className="flex gap-4 items-center">
+            <span className="text-[14px] flex gap-1 text-[#0a1121]">
+              Encontramos
+              <strong>1000+</strong>
+              hóteis em
+              <strong>324</strong>
+              sites
+            </span>
+            <span className=" bg-auto bg-no-repeat bg-center border border-white px-16 py-1 rounded-lg 
+            cursor-pointer">
+              <span className="flex items-center bg-white py-2 px-4 rounded-lg gap-2">
+                <MdLocationPin className="size-5" />Ver no mapa
+              </span>
             </span>
           </section>
         </div>
