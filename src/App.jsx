@@ -15,6 +15,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoIosStarOutline } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
+import { FaAngleRight } from "react-icons/fa6";
 function App() {
 
   return (
@@ -188,78 +189,236 @@ function App() {
             Como o pagamento afeta a classificação
             <CiCircleAlert className="size-5" />
           </p>
-          <div className="flex h-52 border shadow-lg rounded-lg gap-2 bg-white">
-            <div className="rounded-tl-lg rounded-bl-lg h-auto">
-              <img src={hotel_1} alt="" className="h-full w-72 rounded-tl-lg rounded-bl-lg" />
-            </div>
-            <div className="flex flex-col w-2/4 py-2 gap-3">
-              <section className="flex justify-between items-center">
-                <span className="text-[20px] font-bold">Holiday Inn Express & Suites Miami...</span>
-                <FaRegHeart className="size-5 hover:text-red-700 cursor-pointer" />
-              </section>
-              <section className="flex gap-1.5 items-center">
-                <span className="flex">
-                  <IoIosStarOutline />
-                  <IoIosStarOutline />
-                  <IoIosStarOutline />
-                </span>
-                <span>Hotel</span>
-              </section>
-              <section className="flex justify-between h-8 items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
-                <span>Kendall</span>
-                <FaAngleDown />
-              </section>
-              <section className="flex justify-between h-8 items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
-                <span>
-                  <strong>8.9 - Muito Bom </strong>
-                  (2011 avalições)
-                </span>
-                <FaAngleDown />
-              </section>
-            </div>
-            <div className="flex flex-col w-96 p-2 pb-0 pl-0">
-              <section className="flex flex-col gap-2 border border-[#005f00] p-1 pl-1.5 h-52 bg-[#f1f8ea] rounded-lg">
-                <section className="text-[12px] text-[#0a1121] font-bold mt-1">Holiday Inn Express</section>
-                <section className="flex gap-1">
-                  <span className="flex items-center text-[12px] text-[#005f00] font-bold gap-1">
-                    <FaCheck />
-                    cancelamento gratuito
-                  </span>
-                  <span className="flex items-center text-[12px] text-[#005f00] gap-1">
-                    <FaCheck />
-                    cancelamento gratuito
-                  </span>
+          <div className="flex flex-col gap-2">
+            <div className="flex h-52 border shadow-lg rounded-lg gap-2 bg-white">
+              <div className="rounded-tl-lg rounded-bl-lg h-auto">
+                <img src={hotel_1} alt="" className="h-full w-72 rounded-tl-lg rounded-bl-lg" />
+              </div>
+              <div className="flex flex-col w-2/4 py-2 gap-3">
+                <section className="flex justify-between items-center">
+                  <span className="text-[20px] font-bold">Holiday Inn Express & Suites Miami...</span>
+                  <FaRegHeart className="size-5 hover:text-red-700 cursor-pointer" />
                 </section>
-                <section className="flex items-center gap-4 justify-between">
-                  <section className="flex flex-col">
-                    <span className="flex items-center text-lg font-bold"><LuEuro /> 100</span>
-                    <span className="flex items-center text-[11px] gap-1">
-                      17 noite por
-                      <strong className="flex items-center"><LuEuro />1.060</strong>
+                <section className="flex gap-1.5 items-center">
+                  <span className="flex">
+                    <IoIosStarOutline />
+                    <IoIosStarOutline />
+                    <IoIosStarOutline />
+                  </span>
+                  <span>Hotel</span>
+                </section>
+                <section className="flex justify-between h-8 items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
+                  <span>Kendall</span>
+                  <FaAngleDown />
+                </section>
+                <section className="flex justify-between h-8 items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
+                  <span>
+                    <strong>8.9 - Muito Bom </strong>
+                    (2011 avalições)
+                  </span>
+                  <FaAngleDown />
+                </section>
+              </div>
+              <div className="flex flex-col w-96 p-2 pb-0 pl-0">
+                <section className="flex flex-col gap-2 border border-[#005f00] p-1 pl-1.5 h-52 bg-[#f1f8ea] rounded-lg">
+                  <section className="text-[12px] text-[#0a1121] font-bold mt-1">Holiday Inn Express</section>
+                  <section className="flex gap-1">
+                    <span className="flex items-center text-[12px] text-[#005f00] font-bold gap-1">
+                      <FaCheck />
+                      cancelamento gratuito
+                    </span>
+                    <span className="flex items-center text-[12px] text-[#005f00] gap-1">
+                      <FaCheck />
+                      cancelamento gratuito
                     </span>
                   </section>
-                  <button className="bg-green-700 py-1.5 px-9 rounded-lg text-white font-bold">Ver Oferta</button>
-                </section>
-              </section>
-              <section className="flex text-[12px] text-[#0a1121] gap-2 my-2">
-                <section className="flex flex-col hover:bg-gray-300 cursor-pointer bg-[#f3f4f5] border w-32 rounded-lg p-1">
-                  <span className="font-bold ">Country Inn & Suites</span>
-                  <span className="flex items-center font-bold text-[16px]"><LuEuro /> 64</span>
-                  <span>Por diária</span>
-                </section>
-                <section>
-                  <section className="flex flex-col hover:bg-gray-300 cursor-pointer gap-0 border bg-[#f3f4f5] w-44 rounded-lg p-1">
-                    <span className="font-bold">Nosso Preço mais baixo:</span>
-                    <section className="flex justify-between items-center">
-                      <span className="flex items-center text-[16px] font-bold"><LuEuro />66</span>
-                      <FaAngleDown />
+                  <section className="flex items-center gap-4 justify-between">
+                    <section className="flex flex-col">
+                      <span className="flex items-center text-lg font-bold"><LuEuro /> 100</span>
+                      <span className="flex items-center text-[11px] gap-1">
+                        17 noite por
+                        <strong className="flex items-center"><LuEuro />1.060</strong>
+                      </span>
                     </section>
-                    <span>Por diária no site: Moreroo...</span>
+                    <button className="bg-green-700 py-1.5 px-9 rounded-lg text-white font-bold">Ver Oferta</button>
                   </section>
                 </section>
-              </section>
+                <section className="flex text-[12px] text-[#0a1121] gap-2 my-2">
+                  <section className="flex flex-col hover:bg-gray-300 cursor-pointer bg-[#f3f4f5] border w-32 rounded-lg p-1">
+                    <span className="font-bold ">Country Inn & Suites</span>
+                    <span className="flex items-center font-bold text-[16px]"><LuEuro /> 64</span>
+                    <span>Por diária</span>
+                  </section>
+                  <section>
+                    <section className="flex flex-col hover:bg-gray-300 cursor-pointer gap-0 border bg-[#f3f4f5] w-44 rounded-lg p-1">
+                      <span className="font-bold">Nosso Preço mais baixo:</span>
+                      <section className="flex justify-between items-center">
+                        <span className="flex items-center text-[16px] font-bold"><LuEuro />66</span>
+                        <FaAngleDown />
+                      </section>
+                      <span>Por diária no site: Moreroo...</span>
+                    </section>
+                  </section>
+                </section>
+              </div>
+            </div>
+            <div className="flex h-52 border shadow-lg rounded-lg gap-2 bg-white">
+              <div className="rounded-tl-lg rounded-bl-lg h-auto">
+                <img src={hotel_1} alt="" className="h-full w-72 rounded-tl-lg rounded-bl-lg" />
+              </div>
+              <div className="flex flex-col w-2/4 py-2 gap-3">
+                <section className="flex justify-between items-center">
+                  <span className="text-[20px] font-bold">Holiday Inn Express & Suites Miami...</span>
+                  <FaRegHeart className="size-5 hover:text-red-700 cursor-pointer" />
+                </section>
+                <section className="flex gap-1.5 items-center">
+                  <span className="flex">
+                    <IoIosStarOutline />
+                    <IoIosStarOutline />
+                    <IoIosStarOutline />
+                  </span>
+                  <span>Hotel</span>
+                </section>
+                <section className="flex justify-between h-8 items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
+                  <span>Kendall</span>
+                  <FaAngleDown />
+                </section>
+                <section className="flex justify-between h-8 items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
+                  <span>
+                    <strong>8.9 - Muito Bom </strong>
+                    (2011 avalições)
+                  </span>
+                  <FaAngleDown />
+                </section>
+              </div>
+              <div className="flex flex-col w-96 p-2 pb-0 pl-0">
+                <section className="flex flex-col gap-2 border border-[#005f00] p-1 pl-1.5 h-52 bg-[#f1f8ea] rounded-lg">
+                  <section className="text-[12px] text-[#0a1121] font-bold mt-1">Holiday Inn Express</section>
+                  <section className="flex gap-1">
+                    <span className="flex items-center text-[12px] text-[#005f00] font-bold gap-1">
+                      <FaCheck />
+                      cancelamento gratuito
+                    </span>
+                    <span className="flex items-center text-[12px] text-[#005f00] gap-1">
+                      <FaCheck />
+                      cancelamento gratuito
+                    </span>
+                  </section>
+                  <section className="flex items-center gap-4 justify-between">
+                    <section className="flex flex-col">
+                      <span className="flex items-center text-lg font-bold"><LuEuro /> 100</span>
+                      <span className="flex items-center text-[11px] gap-1">
+                        17 noite por
+                        <strong className="flex items-center"><LuEuro />1.060</strong>
+                      </span>
+                    </section>
+                    <button className="bg-green-700 py-1.5 px-9 rounded-lg text-white font-bold">Ver Oferta</button>
+                  </section>
+                </section>
+                <section className="flex text-[12px] text-[#0a1121] gap-2 my-2">
+                  <section className="flex flex-col hover:bg-gray-300 cursor-pointer bg-[#f3f4f5] border w-32 rounded-lg p-1">
+                    <span className="font-bold ">Country Inn & Suites</span>
+                    <span className="flex items-center font-bold text-[16px]"><LuEuro /> 64</span>
+                    <span>Por diária</span>
+                  </section>
+                  <section>
+                    <section className="flex flex-col hover:bg-gray-300 cursor-pointer gap-0 border bg-[#f3f4f5] w-44 rounded-lg p-1">
+                      <span className="font-bold">Nosso Preço mais baixo:</span>
+                      <section className="flex justify-between items-center">
+                        <span className="flex items-center text-[16px] font-bold"><LuEuro />66</span>
+                        <FaAngleDown />
+                      </section>
+                      <span>Por diária no site: Moreroo...</span>
+                    </section>
+                  </section>
+                </section>
+              </div>
+            </div>
+            <div className="flex h-52 border shadow-lg rounded-lg gap-2 bg-white">
+              <div className="rounded-tl-lg rounded-bl-lg h-auto">
+                <img src={hotel_1} alt="" className="h-full w-72 rounded-tl-lg rounded-bl-lg" />
+              </div>
+              <div className="flex flex-col w-2/4 py-2 gap-3">
+                <section className="flex justify-between items-center">
+                  <span className="text-[20px] font-bold">Holiday Inn Express & Suites Miami...</span>
+                  <FaRegHeart className="size-5 hover:text-red-700 cursor-pointer" />
+                </section>
+                <section className="flex gap-1.5 items-center">
+                  <span className="flex">
+                    <IoIosStarOutline />
+                    <IoIosStarOutline />
+                    <IoIosStarOutline />
+                  </span>
+                  <span>Hotel</span>
+                </section>
+                <section className="flex justify-between h-8 items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
+                  <span>Kendall</span>
+                  <FaAngleDown />
+                </section>
+                <section className="flex justify-between h-8 items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
+                  <span>
+                    <strong>8.9 - Muito Bom </strong>
+                    (2011 avalições)
+                  </span>
+                  <FaAngleDown />
+                </section>
+              </div>
+              <div className="flex flex-col w-96 p-2 pb-0 pl-0">
+                <section className="flex flex-col gap-2 border border-[#005f00] p-1 pl-1.5 h-52 bg-[#f1f8ea] rounded-lg">
+                  <section className="text-[12px] text-[#0a1121] font-bold mt-1">Holiday Inn Express</section>
+                  <section className="flex gap-1">
+                    <span className="flex items-center text-[12px] text-[#005f00] font-bold gap-1">
+                      <FaCheck />
+                      cancelamento gratuito
+                    </span>
+                    <span className="flex items-center text-[12px] text-[#005f00] gap-1">
+                      <FaCheck />
+                      cancelamento gratuito
+                    </span>
+                  </section>
+                  <section className="flex items-center gap-4 justify-between">
+                    <section className="flex flex-col">
+                      <span className="flex items-center text-lg font-bold"><LuEuro /> 100</span>
+                      <span className="flex items-center text-[11px] gap-1">
+                        17 noite por
+                        <strong className="flex items-center"><LuEuro />1.060</strong>
+                      </span>
+                    </section>
+                    <button className="bg-green-700 py-1.5 px-9 rounded-lg text-white font-bold">Ver Oferta</button>
+                  </section>
+                </section>
+                <section className="flex text-[12px] text-[#0a1121] gap-2 my-2">
+                  <section className="flex flex-col hover:bg-gray-300 cursor-pointer bg-[#f3f4f5] border w-32 rounded-lg p-1">
+                    <span className="font-bold ">Country Inn & Suites</span>
+                    <span className="flex items-center font-bold text-[16px]"><LuEuro /> 64</span>
+                    <span>Por diária</span>
+                  </section>
+                  <section>
+                    <section className="flex flex-col hover:bg-gray-300 cursor-pointer gap-0 border bg-[#f3f4f5] w-44 rounded-lg p-1">
+                      <span className="font-bold">Nosso Preço mais baixo:</span>
+                      <section className="flex justify-between items-center">
+                        <span className="flex items-center text-[16px] font-bold"><LuEuro />66</span>
+                        <FaAngleDown />
+                      </section>
+                      <span>Por diária no site: Moreroo...</span>
+                    </section>
+                  </section>
+                </section>
+              </div>
             </div>
           </div>
+          <div className="flex justify-center items-center h-16 mt-4 gap-2">
+            <button className="px-3 py-1  bg-slate-500 rounded-md text-white font-bold">1</button>
+            <button className="px-3 py-1.5  text-slate-500 hover:bg-white hover:border-slate-500 hover:text-slate-500 font-bold rounded-md">2</button>
+            <button className="px-3 py-1.5  text-slate-500 hover:bg-white hover:border-slate-500 hover:text-slate-500 font-bold rounded-md">3</button>
+            <button className="px-3 py-1.5  text-slate-500 hover:bg-white hover:border-slate-500 hover:text-slate-500 font-bold rounded-md">4</button>
+            <span>...</span>
+            <button className="px-3 py-1.5  text-slate-500 hover:bg-white hover:border-slate-500 hover:text-slate-500 font-bold rounded-md">40</button>
+            <button className="px-3 py-1.5  text-slate-500 hover:bg-white hover:border-slate-500 hover:text-slate-500 font-bold rounded-md">
+              <FaAngleRight />
+            </button>
+          </div>
+
         </div>
       </main>
     </div>
