@@ -188,7 +188,7 @@ function App() {
             Como o pagamento afeta a classificação
             <CiCircleAlert className="size-5" />
           </p>
-          <div className="flex h-48 border shadow-lg rounded-lg gap-2 bg-white">
+          <div className="flex h-52 border shadow-lg rounded-lg gap-2 bg-white">
             <div className="rounded-tl-lg rounded-bl-lg h-auto">
               <img src={hotel_1} alt="" className="h-full w-72 rounded-tl-lg rounded-bl-lg" />
             </div>
@@ -205,11 +205,11 @@ function App() {
                 </span>
                 <span>Hotel</span>
               </section>
-              <section className="flex justify-between items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
+              <section className="flex justify-between h-8 items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
                 <span>Kendall</span>
                 <FaAngleDown />
               </section>
-              <section className="flex justify-between items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
+              <section className="flex justify-between h-8 items-center hover:bg-gray-100 pr-1 cursor-pointer text-sm text-[#0a1121]">
                 <span>
                   <strong>8.9 - Muito Bom </strong>
                   (2011 avalições)
@@ -217,9 +217,9 @@ function App() {
                 <FaAngleDown />
               </section>
             </div>
-            <div className="flex flex-col w-96 p-2 pl-0">
-              <section className="border border-[#005f00] p-1 bg-gray-100 rounded-lg">
-                <section className="text-[12px] text-[#0a1121] font-bold">Holiday Inn Express</section>
+            <div className="flex flex-col w-96 p-2 pb-0 pl-0">
+              <section className="flex flex-col gap-2 border border-[#005f00] p-1 pl-1.5 h-52 bg-[#f1f8ea] rounded-lg">
+                <section className="text-[12px] text-[#0a1121] font-bold mt-1">Holiday Inn Express</section>
                 <section className="flex gap-1">
                   <span className="flex items-center text-[12px] text-[#005f00] font-bold gap-1">
                     <FaCheck />
@@ -230,7 +230,7 @@ function App() {
                     cancelamento gratuito
                   </span>
                 </section>
-                <section className="flex items-center gap-4">
+                <section className="flex items-center gap-4 justify-between">
                   <section className="flex flex-col">
                     <span className="flex items-center text-lg font-bold"><LuEuro /> 100</span>
                     <span className="flex items-center text-[11px] gap-1">
@@ -238,20 +238,24 @@ function App() {
                       <strong className="flex items-center"><LuEuro />1.060</strong>
                     </span>
                   </section>
-                  <button className="bg-green-700 py-1.5 px-9">Ver Oferta</button>
+                  <button className="bg-green-700 py-1.5 px-9 rounded-lg text-white font-bold">Ver Oferta</button>
                 </section>
               </section>
-              <section>
-                <section className="flex">
-                  <span>Country Inn & Suites</span>
-                  <span><LuEuro /> 64</span>
+              <section className="flex text-[12px] text-[#0a1121] gap-2 my-2">
+                <section className="flex flex-col hover:bg-gray-300 cursor-pointer bg-[#f3f4f5] border w-32 rounded-lg p-1">
+                  <span className="font-bold ">Country Inn & Suites</span>
+                  <span className="flex items-center font-bold text-[16px]"><LuEuro /> 64</span>
+                  <span>Por diária</span>
                 </section>
                 <section>
-                  <section className="flex">
-                    <span>Nosso Preço mais baixo:</span>
-                    <span><LuEuro />Morerooms</span>
+                  <section className="flex flex-col hover:bg-gray-300 cursor-pointer gap-0 border bg-[#f3f4f5] w-44 rounded-lg p-1">
+                    <span className="font-bold">Nosso Preço mais baixo:</span>
+                    <section className="flex justify-between items-center">
+                      <span className="flex items-center text-[16px] font-bold"><LuEuro />66</span>
+                      <FaAngleDown />
+                    </section>
+                    <span>Por diária no site: Moreroo...</span>
                   </section>
-                  <FaAngleDown />
                 </section>
               </section>
             </div>
