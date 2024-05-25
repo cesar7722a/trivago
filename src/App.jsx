@@ -18,6 +18,10 @@ import { FaCheck } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
 
 function App() {
 
@@ -453,7 +457,44 @@ function App() {
       <footer>
         <div>
           <h1>Trivago</h1>
-          <section><FaFacebookF /></section>
+          <section>
+            <FaFacebookF />
+            <FaXTwitter />
+            <FaInstagram />
+            <FaYoutube />
+            <FaLinkedinIn />
+          </section>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Vagas</a></li>
+            <li><a href="#">Imprensa</a></li>
+            <li><a href="#">Investor relations</a></li>
+            <li><a href="#">App trivago - acesse de onde estiver</a></li>
+            <li><a href="#">trivago Business Studio</a></li>
+            <li><a href="#">Affiliate</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Central de ajuda</a></li>
+            <li><a href="#">Descubra como o trivago funciona</a></li>
+            <li><a href="#">Condições de uso</a></li>
+            <li><a href="#">Informações legais</a></li>
+            <li><a href="#">Preferências de cookies</a></li>
+            <li><a href="#">Aviso de Privacidade</a></li>
+            <li><a href="#">Cyber Security</a></li>
+          </ul>
+          <div>
+            <p>Quer ideias exclusivas para a sua próxima estadia? Inscreva-se em nossa newsletter.</p>
+            <section>
+              <input type="text" placeholder="Endereço de e-mail" />
+              <button>Inscreva-se</button>
+            </section>
+            <section>
+              <p>Quer ideias exclusivas para a sua próxima estadia? Inscreva-se em nossa newsletter.</p>
+              <p>Direitos autorais 2024 trivago | Todos os direitos reservados.</p>
+            </section>
+          </div>
         </div>
       </footer>
     </div>
