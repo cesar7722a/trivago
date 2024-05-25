@@ -16,6 +16,9 @@ import { IoIosStarOutline } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
+import { IoIosNotificationsOutline } from "react-icons/io";
+import { FaFacebookF } from "react-icons/fa";
+
 function App() {
 
   return (
@@ -407,7 +410,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center h-16 mt-4 gap-2 text-[16px]">
+          <div className="flex justify-center items-center h-16 mt-6 gap-2 text-[16px]">
             <button className="w-8 h-8
             bg-gray-600 rounded-md text-white font-bold">
               1
@@ -434,9 +437,25 @@ function App() {
               <FaAngleRight />
             </button>
           </div>
-
+          <div className="my-5">
+            <hr />
+          </div>
+          <div className="  border-gray-300 items-center mb-8 bg-white h-16 rounded-2xl">
+            <div className="flex text-[12px] border  border-gray-300 rounded-2xl
+          text-[#0a1121] items-center gap-2 bg-white h-16 pl-2">
+              <IoIosNotificationsOutline className="size-8 text-orange-400" />
+              <p>Os preços e a disponibilidade que recebemos dos sites de reserva mudam com frequência. Por isso, pode haver diferenças entre as ofertas que você viu no trivago e os preços disponíveis nos sites de reserva.</p>
+            </div>
+            <div className="bg-[#afb3bc] h-1 mx-[20px] rounded-bl-2xl rounded-br-2xl"></div>
+          </div>
         </div>
       </main>
+      <footer>
+        <div>
+          <h1>Trivago</h1>
+          <section><FaFacebookF /></section>
+        </div>
+      </footer>
     </div>
   )
 }
