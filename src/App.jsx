@@ -407,14 +407,30 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center h-16 mt-4 gap-2">
-            <button className="px-3 py-1  bg-slate-500 rounded-md text-white font-bold">1</button>
-            <button className="px-3 py-1.5  text-slate-500 hover:bg-white hover:border-slate-500 hover:text-slate-500 font-bold rounded-md">2</button>
-            <button className="px-3 py-1.5  text-slate-500 hover:bg-white hover:border-slate-500 hover:text-slate-500 font-bold rounded-md">3</button>
-            <button className="px-3 py-1.5  text-slate-500 hover:bg-white hover:border-slate-500 hover:text-slate-500 font-bold rounded-md">4</button>
-            <span>...</span>
-            <button className="px-3 py-1.5  text-slate-500 hover:bg-white hover:border-slate-500 hover:text-slate-500 font-bold rounded-md">40</button>
-            <button className="px-3 py-1.5  text-slate-500 hover:bg-white hover:border-slate-500 hover:text-slate-500 font-bold rounded-md">
+          <div className="flex justify-center items-center h-16 mt-4 gap-2 text-[16px]">
+            <button className="w-8 h-8
+            bg-gray-600 rounded-md text-white font-bold">
+              1
+            </button>
+            <button className="w-8 h-8 text-slate-500 hover:border
+             hover:bg-white hover:border-slate-500 font-bold rounded-md">
+              2
+            </button>
+            <button className="w-8 h-8 text-slate-500 hover:border
+             hover:bg-white hover:border-slate-500 font-bold rounded-md">
+              3
+            </button>
+            <button className="w-8 h-8 text-slate-500 hover:border
+             hover:bg-white hover:border-slate-500 font-bold rounded-md">
+              4
+            </button>
+            <span className="font-bold text-sm text-slate-500">...</span>
+            <button className="w-8 h-8 text-slate-500 hover:border
+             hover:bg-white hover:border-slate-500 font-bold rounded-md">
+              40
+            </button>
+            <button className="w-8 h-8 text-black hover:border flex justify-center items-center
+             hover:bg-white hover:border-slate-500 font-bold rounded-md">
               <FaAngleRight />
             </button>
           </div>
