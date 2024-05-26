@@ -457,7 +457,7 @@ function App() {
       <footer className="bg-[#0a1121]">
         <div className="mx-44 py-8">
           <div className="flex justify-between">
-            <h1 className="text-white text-3xl font-bold">Trivago</h1>
+            <h1 className="text-white text-2xl font-bold">Trivago</h1>
             <section className="flex items-center gap-1.5 h-12">
               <span className="h-5 w-5 bg-white flex items-center justify-center rounded-full">
                 <FaFacebookF className="size-4" />
