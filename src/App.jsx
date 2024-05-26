@@ -476,9 +476,9 @@ function App() {
               </span>
             </section>
           </div>
-          <div>
+          <div className="mt-8 mb-6">
             <select name="" id=""
-              className="cursor-pointer rounded-lg h-9 text-white mt-8 mb-2
+              className="cursor-pointer rounded-lg h-9 text-white
                        w-56 text-[14px] outline-none bg-[#0a1121] border border-gray-300 px-1">
               <option value="">Sugestões</option>
               <option value="">Somente Preço</option>
