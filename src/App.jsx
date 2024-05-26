@@ -477,6 +477,17 @@ function App() {
             </section>
           </div>
           <div>
+            <select name="" id=""
+              className="cursor-pointer rounded-lg h-9 text-white
+                       w-56 text-[14px] outline-none bg-[#0a1121] border border-gray-300 px-1">
+              <option value="">Sugestões</option>
+              <option value="">Somente Preço</option>
+              <option value="">Avaliação e Sugestões</option>
+              <option value="">Preço e Sugestões</option>
+              <option value="">Somente avaliação</option>
+            </select>
+          </div>
+          <div>
             <ul>
               <li><a href="#">Quem Somos</a></li>
               <li><a href="#">Vagas</a></li>
