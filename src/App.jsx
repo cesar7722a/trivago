@@ -74,8 +74,8 @@ function App() {
             <section className="flex gap-2.5 items-center">
               <IoIosSearch className="text-black cursor-pointer size-7 w-9 font-bold" />
               <section className="flex flex-col">
-                <h2 className="text-[#6c707a] text-[12px]">Destino</h2>
-                <h3 className="text-[#0a1121] text-[14px] font-bold">Estado Unido da Amé...</h3>
+                <h2 className="text-[#6c707a] text-xs">Destino</h2>
+                <h3 className="text-[#0a1121] text-sm font-bold">Estado Unido da Amé...</h3>
               </section>
               <span className="p-3 cursor-pointer text-[#0a1121] font-bold">X</span>
             </section>
@@ -85,14 +85,14 @@ function App() {
             <section className="flex items-center gap-2.5 hover:bg-[#F3F4F5] hover:rounded-lg h-14 w-52 mx-1">
               <GoArchive className="text-black cursor-pointer size-5 w-9 font-bold" />
               <section className="flex flex-col w-28">
-                <h2 className="text-[#6c707a] text-[12px]">Entada</h2>
-                <h3 className="text-[#0a1121] text-[14px] font-bold">ter, 22/03/2012</h3>
+                <h2 className="text-[#6c707a] text-xs">Entada</h2>
+                <h3 className="text-[#0a1121] text-sm font-bold">ter, 22/03/2012</h3>
               </section>
             </section>
             <section className="w-px h-8 bg-[#dbdde1]"></section>
             <section className="hover:bg-[#F3F4F5] pl-2 w-44 flex flex-col h-14 justify-center hover:rounded-lg m-1">
-              <h2 className="text-[#6c707a] text-[12px]">Saída</h2>
-              <h3 className="text-[#0a1121] text-[14px] font-bold">ter, 22/03/2012</h3>
+              <h2 className="text-[#6c707a] text-xs">Saída</h2>
+              <h3 className="text-[#0a1121] text-sm font-bold">ter, 22/03/2012</h3>
             </section>
           </div>
 
@@ -100,61 +100,69 @@ function App() {
             <section className="flex items-center justify-start gap-3 w-[14.6rem] pl-2 hover:bg-[#F3F4F5] my-1 ml-1 h-14 hover:rounded-lg cursor-pointer">
               <LuBedDouble className="size-5" />
               <section>
-                <h2 className="text-[#6c707a] text-[12px]">Hóspedes e quartos</h2>
-                <h3 className="text-[#0a1121] text-[14px] font-bold">2 hóspedes, 1 quarto</h3>
+                <h2 className="text-[#6c707a] text-xs">Hóspedes e quartos</h2>
+                <h3 className="text-[#0a1121] text-sm font-bold">2 hóspedes, 1 quarto</h3>
               </section>
             </section>
-            <button className="bg-[#0077c2] py-[12px] px-[32px] text-[16px] text-[#fff] font-bold rounded-lg">Pesquisar</button>
+            <button className="bg-[#0077c2] py-[12px] px-[32px] text-base text-[#fff] font-bold rounded-lg">Pesquisar</button>
           </div>
         </div>
 
         <div className="flex mx-48 gap-2 mt-10">
           <section className="flex flex-col w-72 cursor-pointer">
-            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Preço:</strong>por diária</h2>
+            <h2 className="flex gap-1 ml-2 mb-1 text-sm text-[#0a1121]">
+              <strong>Preço:</strong>por diária
+            </h2>
             <section className="flex border border-[#dbdde1] 
             items-center justify-between px-2.5 py-1.5
             rounded-3xl">
-              <span className="flex gap-1 items-center text-[14px]"><LuEuro />1 -<LuEuro />500 +</span>
+              <span className="flex gap-1 items-center text-sm"><LuEuro />1 -<LuEuro />500 +</span>
               <FaAngleDown />
             </section>
           </section>
 
           <section className="w-40 cursor-pointer">
-            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Filtros</strong></h2>
+            <h2 className="flex gap-1 ml-2 mb-1 text-sm text-[#0a1121]">
+              <strong>Filtros</strong>
+            </h2>
             <section className="flex border border-[#dbdde1] 
             items-center justify-between px-2.5 py-1.5
             rounded-3xl">
-              <span className="text-[14px]">Escolher</span>
+              <span className="text-sm">Escolher</span>
               <FaAngleDown />
             </section>
           </section>
 
           <section className="w-40 cursor-pointer">
-            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Avaliação</strong></h2>
+            <h2 className="flex gap-1 ml-2 mb-1 text-sm text-[#0a1121]">
+              <strong>Avaliação</strong>
+            </h2>
             <section className="flex border border-[#dbdde1] 
             items-center justify-between px-2.5 py-1.5
             rounded-3xl">
-              <span className="text-[14px]">Todas</span>
+              <span className="text-sm">Todas</span>
               <FaAngleDown />
             </section>
           </section>
 
           <section className="w-40 cursor-pointer">
-            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121]"><strong>Tipo</strong></h2>
+            <h2 className="flex gap-1 ml-2 mb-1 text-sm text-[#0a1121]"><strong>Tipo</strong></h2>
             <section className="flex border border-[#dbdde1] 
             items-center justify-between px-2.5 py-1.5
             rounded-3xl">
-              <span className="text-[14px]">Escolher</span>
+              <span className="text-sm">Escolher</span>
               <FaAngleDown />
             </section>
           </section>
 
           <section className="w-40 cursor-not-allowed">
-            <h2 className="flex gap-1 ml-2 mb-1 text-[14px] text-[#0a1121] cursor-not-allowed"><strong>Localização</strong></h2>
+            <h2 className="flex gap-1 ml-2 mb-1 text-sm text-[#0a1121] cursor-not-allowed">
+              <strong>Localização</strong>
+            </h2>
             <section className="flex border border-[#dbdde1] 
             items-center justify-between px-2.5 py-1.5
             rounded-3xl">
-              <span className="text-[14px]">Estados Unidos d...</span>
+              <span className="text-sm">Estados Unidos d...</span>
               <FaAngleDown />
             </section>
           </section>
@@ -164,10 +172,10 @@ function App() {
       <main className="bg-gray-100 mt-4">
         <div className="mx-48 flex justify-between items-center pt-5 mb-4">
           <section className="flex gap-1.5 items-center">
-            <span className="text-[14px] text-[#0a1121] font-bold cursor-default">Ordenar por</span>
+            <span className="text-sm text-[#0a1121] font-bold cursor-default">Ordenar por</span>
             <select name="" id=""
               className="cursor-pointer rounded-lg h-9 bg-white
-                       w-44 text-[14px] outline-none border border-gray-300 px-1">
+                       w-44 text-sm outline-none border border-gray-300 px-1">
               <option value="">Sugestões</option>
               <option value="">Somente Preço</option>
               <option value="">Avaliação e Sugestões</option>
@@ -176,7 +184,7 @@ function App() {
             </select>
           </section>
           <section className="flex gap-4 items-center">
-            <span className="text-[14px] flex gap-1 text-[#0a1121]">
+            <span className="text-sm flex gap-1 text-[#0a1121]">
               Encontramos
               <strong>1000+</strong>
               hóteis em
@@ -192,7 +200,7 @@ function App() {
           </section>
         </div>
         <div className="flex flex-col mx-48">
-          <p className="flex items-center gap-1 text-[12px] text-[#6c707a] cursor-pointer mb-0.5">
+          <p className="flex items-center gap-1 text-xs text-[#6c707a] cursor-pointer mb-0.5">
             Como o pagamento afeta a classificação
             <CiCircleAlert className="size-5" />
           </p>
@@ -414,7 +422,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center h-16 mt-6 gap-2 text-[16px]">
+          <div className="flex justify-center items-center h-16 mt-6 gap-2 text-base">
             <button className="w-8 h-8
             bg-gray-600 rounded-md text-white font-bold">
               1
@@ -445,7 +453,7 @@ function App() {
             <hr />
           </div>
           <div className="  border-gray-300 items-center mb-8 bg-white h-16 rounded-2xl">
-            <div className="flex text-[12px] border  border-gray-300 rounded-2xl
+            <div className="flex text-xs border  border-gray-300 rounded-2xl
           text-[#0a1121] items-center gap-2 bg-white h-16 pl-2">
               <IoIosNotificationsOutline className="size-8 text-orange-400" />
               <p>Os preços e a disponibilidade que recebemos dos sites de reserva mudam com frequência. Por isso, pode haver diferenças entre as ofertas que você viu no trivago e os preços disponíveis nos sites de reserva.</p>
@@ -479,7 +487,7 @@ function App() {
           <div className="mt-8 mb-6">
             <select name="" id=""
               className="cursor-pointer rounded-lg h-9 text-white
-                       w-56 text-[14px] outline-none bg-[#0a1121] border border-gray-300 px-1">
+                       w-56 text-sm outline-none bg-[#0a1121] border border-gray-300 px-1">
               <option value="">Sugestões</option>
               <option value="">Somente Preço</option>
               <option value="">Avaliação e Sugestões</option>
