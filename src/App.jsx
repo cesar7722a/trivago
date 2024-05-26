@@ -487,34 +487,40 @@ function App() {
               <option value="">Somente avaliação</option>
             </select>
           </div>
-          <div>
-            <ul>
-              <li><a href="#">Quem Somos</a></li>
-              <li><a href="#">Vagas</a></li>
-              <li><a href="#">Imprensa</a></li>
-              <li><a href="#">Investor relations</a></li>
-              <li><a href="#">App trivago - acesse de onde estiver</a></li>
-              <li><a href="#">trivago Business Studio</a></li>
-              <li><a href="#">Affiliate</a></li>
+          <div className="flex gap-4">
+            <ul className="flex flex-col gap-2 w-[22rem]">
+              <li className="text-sm text-white"><a href="#">Quem Somos</a></li>
+              <li className="text-sm text-white"><a href="#">Vagas</a></li>
+              <li className="text-sm text-white"><a href="#">Imprensa</a></li>
+              <li className="text-sm text-white"><a href="#">Investor relations</a></li>
+              <li className="text-sm text-white"><a href="#">App trivago - acesse de onde estiver</a></li>
+              <li className="text-sm text-white"><a href="#">trivago Business Studio</a></li>
+              <li className="text-sm text-white"><a href="#">Affiliate</a></li>
             </ul>
-            <ul>
-              <li><a href="#">Central de ajuda</a></li>
-              <li><a href="#">Descubra como o trivago funciona</a></li>
-              <li><a href="#">Condições de uso</a></li>
-              <li><a href="#">Informações legais</a></li>
-              <li><a href="#">Preferências de cookies</a></li>
-              <li><a href="#">Aviso de Privacidade</a></li>
-              <li><a href="#">Cyber Security</a></li>
+            <ul className="flex flex-col gap-2 w-[22rem]">
+              <li className="text-sm text-white"><a href="#">Central de ajuda</a></li>
+              <li className="text-sm text-white"><a href="#">Descubra como o trivago funciona</a></li>
+              <li className="text-sm text-white"><a href="#">Condições de uso</a></li>
+              <li className="text-sm text-white"><a href="#">Informações legais</a></li>
+              <li className="text-sm text-white"><a href="#">Preferências de cookies</a></li>
+              <li className="text-sm text-white"><a href="#">Aviso de Privacidade</a></li>
+              <li className="text-sm text-white"><a href="#">Cyber Security</a></li>
             </ul>
-            <div>
-              <p>Quer ideias exclusivas para a sua próxima estadia? Inscreva-se em nossa newsletter.</p>
-              <section>
-                <input type="text" placeholder="Endereço de e-mail" />
-                <button>Inscreva-se</button>
+            <div className="flex flex-col gap-5">
+              <p className="text-xl text-white font-bold">Quer ideias exclusivas para a sua próxima estadia? Inscreva-se em nossa newsletter.</p>
+              <section className="flex gap-4 items-center">
+                <input
+                  type="text"
+                  placeholder="Endereço de e-mail"
+                  className=" bg-[#0a1121] border-b-2 border-[#0077c2] py-2 w-80 text-xl  outline-none placeholder:text-white placeholder:text-lg" />
+                <button
+                  className="px-8 py-2 bg-[#0077c2] text-lg text-white rounded-lg">
+                  Inscreva-se
+                </button>
               </section>
               <section>
-                <p>Quer ideias exclusivas para a sua próxima estadia? Inscreva-se em nossa newsletter.</p>
-                <p>Direitos autorais 2024 trivago | Todos os direitos reservados.</p>
+                <p className="text-[#dbdde1] text-xs">Quer ideias exclusivas para a sua próxima estadia? Inscreva-se em nossa newsletter.</p>
+                <p className="text-[#dbdde1] text-xs">Direitos autorais 2024 trivago | Todos os direitos reservados.</p>
               </section>
             </div>
           </div>
