@@ -454,46 +454,58 @@ function App() {
           </div>
         </div>
       </main>
-      <footer>
-        <div>
-          <h1>Trivago</h1>
-          <section>
-            <FaFacebookF />
-            <FaXTwitter />
-            <FaInstagram />
-            <FaYoutube />
-            <FaLinkedinIn />
-          </section>
-        </div>
-        <div>
-          <ul>
-            <li><a href="#">Quem Somos</a></li>
-            <li><a href="#">Vagas</a></li>
-            <li><a href="#">Imprensa</a></li>
-            <li><a href="#">Investor relations</a></li>
-            <li><a href="#">App trivago - acesse de onde estiver</a></li>
-            <li><a href="#">trivago Business Studio</a></li>
-            <li><a href="#">Affiliate</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">Central de ajuda</a></li>
-            <li><a href="#">Descubra como o trivago funciona</a></li>
-            <li><a href="#">Condições de uso</a></li>
-            <li><a href="#">Informações legais</a></li>
-            <li><a href="#">Preferências de cookies</a></li>
-            <li><a href="#">Aviso de Privacidade</a></li>
-            <li><a href="#">Cyber Security</a></li>
-          </ul>
+      <footer className="bg-[#0a1121]">
+        <div className="mx-44 py-8">
+          <div className="flex justify-between">
+            <h1 className="text-white text-3xl font-bold">Trivago</h1>
+            <section className="flex items-center gap-1.5 h-12">
+              <span className="h-5 w-5 bg-white flex items-center justify-center rounded-full">
+                <FaFacebookF className="size-4" />
+              </span>
+              <span className="h-5 w-5 bg-white flex items-center justify-center rounded-full">
+                <FaXTwitter className="size-4" />
+              </span >
+              <span className="h-5 w-5 bg-white flex items-center justify-center rounded-full">
+                <FaInstagram className="size-4" />
+              </span>
+              <span className="h-5 w-5 bg-white flex items-center justify-center rounded-full">
+                <FaYoutube className="size-4" />
+              </span>
+              <span className="h-5 w-5 bg-white flex items-center justify-center rounded-full">
+                <FaLinkedinIn className="size-4" />
+              </span>
+            </section>
+          </div>
           <div>
-            <p>Quer ideias exclusivas para a sua próxima estadia? Inscreva-se em nossa newsletter.</p>
-            <section>
-              <input type="text" placeholder="Endereço de e-mail" />
-              <button>Inscreva-se</button>
-            </section>
-            <section>
+            <ul>
+              <li><a href="#">Quem Somos</a></li>
+              <li><a href="#">Vagas</a></li>
+              <li><a href="#">Imprensa</a></li>
+              <li><a href="#">Investor relations</a></li>
+              <li><a href="#">App trivago - acesse de onde estiver</a></li>
+              <li><a href="#">trivago Business Studio</a></li>
+              <li><a href="#">Affiliate</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Central de ajuda</a></li>
+              <li><a href="#">Descubra como o trivago funciona</a></li>
+              <li><a href="#">Condições de uso</a></li>
+              <li><a href="#">Informações legais</a></li>
+              <li><a href="#">Preferências de cookies</a></li>
+              <li><a href="#">Aviso de Privacidade</a></li>
+              <li><a href="#">Cyber Security</a></li>
+            </ul>
+            <div>
               <p>Quer ideias exclusivas para a sua próxima estadia? Inscreva-se em nossa newsletter.</p>
-              <p>Direitos autorais 2024 trivago | Todos os direitos reservados.</p>
-            </section>
+              <section>
+                <input type="text" placeholder="Endereço de e-mail" />
+                <button>Inscreva-se</button>
+              </section>
+              <section>
+                <p>Quer ideias exclusivas para a sua próxima estadia? Inscreva-se em nossa newsletter.</p>
+                <p>Direitos autorais 2024 trivago | Todos os direitos reservados.</p>
+              </section>
+            </div>
           </div>
         </div>
       </footer>
