@@ -23,6 +23,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { LiMenu } from "./componentes/li-menu";
+import { ModalMenu } from "./componentes/card-menu"
 
 function App() {
 
@@ -40,10 +41,9 @@ function App() {
                 <RxCounterClockwiseClock className="size-5" />
                 Visualizações recentes
               </di>
-              <div className="flex-none absolute mt-80 w-72 h-60 bg-[#FFF] rounded-md shadow-2xl 
-                hidden group-hover:block">
-                <span className="flex-none">card</span>
-              </div>
+              <ModalMenu>
+                <span>card</span>
+              </ModalMenu>
             </LiMenu>
 
             <LiMenu>
@@ -60,8 +60,13 @@ function App() {
               Fazer Login
             </LiMenu>
             <LiMenu>
-              <RiMenuLine className="size-5" />
-              Menu
+              <di className="flex items-center justify-start gap-1.5">
+                <RiMenuLine className="size-5" />
+                Menu
+              </di>
+              <ModalMenu className="w-6 h-12">
+                visualizações
+              </ModalMenu>
             </LiMenu>
           </ul>
         </div>
