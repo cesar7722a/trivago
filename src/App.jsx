@@ -34,23 +34,18 @@ function App() {
             <img className="w-28 h-full" src={logoTrivago} alt="Logo trivago" title="Logo trivago" />
           </h1>
           <ul className="flex">
+
             <LiMenu>
-              <RxCounterClockwiseClock className="size-5" />
-              Visualizações recentes
-            </LiMenu>
-            {/* <li
-              className="flex flex-col justify-center  cursor-pointer
-              text-sm text-[#0A1121] py-5 px-5 hover:bg-[#F3F4F5] 
-              ">
               <di className="flex items-center justify-start gap-1.5">
-
+                <RxCounterClockwiseClock className="size-5" />
+                Visualizações recentes
               </di>
-
-            </li> */}
-            {/* <div className="flex-none absolute mt-80 w-72 h-60 bg-[#FFF] rounded-md shadow-2xl 
-              invisible hover:visible">
+              <div className="flex-none absolute mt-80 w-72 h-60 bg-[#FFF] rounded-md shadow-2xl 
+                hidden group-hover:block">
                 <span className="flex-none">card</span>
-              </div> */}
+              </div>
+            </LiMenu>
+
             <LiMenu>
               <CiHeart className="size-7" />
               Favoritos
