@@ -24,6 +24,8 @@ import { FaYoutube } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { LiMenu } from "./componentes/li-menu";
 import { ModalMenu } from "./componentes/card-menu"
+import { Modal } from "./componentes/modal";
+import { CardModal } from "./card_modal";
 
 function App() {
 
@@ -536,6 +538,11 @@ function App() {
           </div>
         </div>
       </footer>
+      <Modal>
+        <CardModal>
+          <h1>modelo</h1>
+        </CardModal>
+      </Modal>
     </div>
   )
 }
