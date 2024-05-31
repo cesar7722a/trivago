@@ -26,6 +26,7 @@ import { LiMenu } from "./componentes/li-menu";
 import { ModalMenu } from "./componentes/card-menu"
 import { Modal } from "./componentes/modal";
 import { CardModal } from "./card_modal";
+import { TitleModal } from "./componentes/titleModal";
 
 function App() {
 
@@ -540,7 +541,10 @@ function App() {
       </footer>
       <Modal>
         <CardModal>
-          <h1>modelo</h1>
+          <TitleModal>
+            <h1 className="text-[#000] text-base font-bold">Selecione o idioma e a moeda</h1>
+            <span className="text-[#000] text-base font-bold cursor-pointer">X</span>
+          </TitleModal>
         </CardModal>
       </Modal>
     </div>
