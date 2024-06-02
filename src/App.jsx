@@ -28,6 +28,7 @@ import { Modal } from "./componentes/modal";
 import { CardModal } from "./card_modal";
 import { TitleModal } from "./componentes/titleModal";
 import { SelectCountry } from "./componentes/dinaComponentes/select";
+import { CustomSelect } from "./componentes/customSelect";
 
 function App() {
 
@@ -546,12 +547,22 @@ function App() {
             <h1 className="text-[#000] text-base font-bold">Selecione o idioma e a moeda</h1>
             <span className="text-[#000] text-base font-bold cursor-pointer">X</span>
           </TitleModal>
-          <div>
-            <h1>Indioma</h1>
+          <CustomSelect className="px-6">
+            <h1 className="text-xs text-[#0a1121]">Idioma</h1>
             <SelectCountry
-              option={
-                ["Angola", "França", "Alemanha", "Quenia", "Japão", "Ruanda"]} />
-          </div>
+              className="w-[21rem] border border-r-emerald-50 px-2 py-2 rounded-lg mt-1 text-[#0a1121] outline-none"
+              optionCountry={
+                ["Angola", "França", "Alemanha", "Quenia", "Japão", "Ruanda"]
+              } />
+          </CustomSelect>
+          <CustomSelect className="px-6">
+            <h1 className="text-xs text-[#0a1121]">Moeda</h1>
+            <SelectCountry
+              className="w-[21rem] border border-r-emerald-50 px-2 py-2 rounded-lg mt-1 text-[#0a1121] outline-none"
+              optionCountry={
+                ["EUR-Euro", "GBP-Libra esterlina", "USD-Dólar dos Estados Unidos", "ARS-Peso Argentino", "AUD-Dólar australiano", "BRL-Real"]
+              } />
+          </CustomSelect>
         </CardModal>
       </Modal>
     </div>
