@@ -564,7 +564,7 @@ function App() {
               } />
           </CustomSelect>
           <div className="py-4 flex items-center justify-end pr-4 border border-t-emerald-500 rounded-br-lg rounded-bl-lg">
-            <button>Aplicar</button>
+            <button className="bg-[#007cc2] px-3 py-2 font-bold rounded-lg text-white text-sm">Aplicar</button>
           </div>
         </CardModal>
       </Modal>
