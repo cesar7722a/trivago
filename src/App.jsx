@@ -563,6 +563,9 @@ function App() {
                 ["EUR-Euro", "GBP-Libra esterlina", "USD-Dólar dos Estados Unidos", "ARS-Peso Argentino", "AUD-Dólar australiano", "BRL-Real"]
               } />
           </CustomSelect>
+          <div className="py-4 flex items-center justify-end pr-4 border border-t-emerald-500">
+            <button>Aplicar</button>
+          </div>
         </CardModal>
       </Modal>
     </div>
