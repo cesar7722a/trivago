@@ -1,6 +1,6 @@
 
 
-export function Select(props) {
+export function SelectCountry(props) {
   return (
     <select {...props} name="" id="">
       {
