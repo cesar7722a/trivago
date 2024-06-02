@@ -550,7 +550,7 @@ function App() {
           <CustomSelect className="px-6">
             <h1 className="text-xs text-[#0a1121]">Idioma</h1>
             <SelectCountry
-              className="w-[21rem] border border-r-emerald-50 px-2 py-2 rounded-lg mt-1 text-[#0a1121] outline-none"
+              className="w-[21.2rem] border border-r-emerald-50 px-2 py-2 rounded-lg mt-1 text-[#0a1121] outline-none"
               optionCountry={
                 ["Angola", "França", "Alemanha", "Quenia", "Japão", "Ruanda"]
               } />
@@ -558,12 +558,12 @@ function App() {
           <CustomSelect className="px-6">
             <h1 className="text-xs text-[#0a1121]">Moeda</h1>
             <SelectCountry
-              className="w-[21rem] border border-r-emerald-50 px-2 py-2 rounded-lg mt-1 text-[#0a1121] outline-none"
+              className="w-[21.2rem] border border-r-emerald-50 px-2 py-2 rounded-lg mt-1 text-[#0a1121] outline-none"
               optionCountry={
                 ["EUR-Euro", "GBP-Libra esterlina", "USD-Dólar dos Estados Unidos", "ARS-Peso Argentino", "AUD-Dólar australiano", "BRL-Real"]
               } />
           </CustomSelect>
-          <div className="py-4 flex items-center justify-end pr-4 border border-t-emerald-500">
+          <div className="py-4 flex items-center justify-end pr-4 border border-t-emerald-500 rounded-br-lg rounded-bl-lg">
             <button>Aplicar</button>
           </div>
         </CardModal>
