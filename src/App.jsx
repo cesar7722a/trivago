@@ -24,6 +24,11 @@ import { FaYoutube } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { LiMenu } from "./componentes/li-menu";
 import { ModalMenu } from "./componentes/card-menu"
+import { Modal } from "./componentes/modal";
+import { CardModal } from "./card_modal";
+import { TitleModal } from "./componentes/titleModal";
+import { SelectCountry } from "./componentes/dinaComponentes/select";
+import { CustomSelect } from "./componentes/customSelect";
 
 function App() {
 
@@ -536,6 +541,33 @@ function App() {
           </div>
         </div>
       </footer>
+      <Modal>
+        <CardModal>
+          <TitleModal>
+            <h1 className="text-[#000] text-base font-bold">Selecione o idioma e a moeda</h1>
+            <span className="text-[#000] text-base font-bold cursor-pointer">X</span>
+          </TitleModal>
+          <CustomSelect className="px-6">
+            <h1 className="text-xs text-[#0a1121]">Idioma</h1>
+            <SelectCountry
+              className="w-[21.2rem] border border-r-emerald-50 px-2 py-2 rounded-lg mt-1 text-[#0a1121] outline-none"
+              optionCountry={
+                ["Angola", "França", "Alemanha", "Quenia", "Japão", "Ruanda"]
+              } />
+          </CustomSelect>
+          <CustomSelect className="px-6">
+            <h1 className="text-xs text-[#0a1121]">Moeda</h1>
+            <SelectCountry
+              className="w-[21.2rem] border border-r-emerald-50 px-2 py-2 rounded-lg mt-1 text-[#0a1121] outline-none"
+              optionCountry={
+                ["EUR-Euro", "GBP-Libra esterlina", "USD-Dólar dos Estados Unidos", "ARS-Peso Argentino", "AUD-Dólar australiano", "BRL-Real"]
+              } />
+          </CustomSelect>
+          <div className="py-4 flex items-center justify-end pr-4 border border-t-emerald-50 rounded-br-lg rounded-bl-lg">
+            <button className="bg-[#007cc2] px-3 py-2 font-bold rounded-lg text-white text-sm">Aplicar</button>
+          </div>
+        </CardModal>
+      </Modal>
     </div>
   )
 }
