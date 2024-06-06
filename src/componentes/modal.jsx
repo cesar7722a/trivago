@@ -10,7 +10,7 @@ export function Modal(props) {
 
 const CloseModal = (e) => {
   e.stopPropagation()
-  e.target.hidden ? console.log("1") : (
+  e.target.hidden ? null : (
     e.target.classList.remove("flex")
   )
   e.target.classList.add("hidden")
