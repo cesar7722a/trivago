@@ -29,8 +29,16 @@ import { CardModal } from "./card_modal";
 import { TitleModal } from "./componentes/titleModal";
 import { SelectCountry } from "./componentes/dinaComponentes/select";
 import { CustomSelect } from "./componentes/customSelect";
+import { useRef } from "react";
 
 function App() {
+
+  const modalRef = useRef(null)
+
+  const handleOpenModal = (e) => {
+    modalRef.current.click()
+    console.log(e.target)
+  }
 
   return (
     < div>
@@ -55,7 +63,7 @@ function App() {
               <CiHeart className="size-7" />
               Favoritos
             </LiMenu>
-            <LiMenu>
+            <LiMenu onclick={handleOpenModal}>
               <TfiWorld className="size-5" />
               PT.
               <LuEuro />
@@ -541,7 +549,9 @@ function App() {
           </div>
         </div>
       </footer>
-      <Modal>
+      <Modal
+        ref={modalRef}
+      >
         <CardModal>
           <TitleModal>
             <h1 className="text-[#000] text-base font-bold">Selecione o idioma e a moeda</h1>
