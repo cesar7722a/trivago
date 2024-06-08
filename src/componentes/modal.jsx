@@ -1,26 +1,18 @@
 import { forwardRef } from "react"
 
 
-// export function Modal(props) {
-//   return (
-//     <div {...props} onClick={CloseModal}
-//       className="fixed flex top-0 bottom-0 left-0 right-0 bg-[#0a1121bf] h-full w-full z-1 justify-center items-center">
-//       {props.children}
-//     </div>
-//   )
-// }
-
-export const Modal = forwardRef((props, ref) => {
+const Modal = forwardRef((props, ref) => {
   return (
     <div
       {...props}
       onClick={CloseModal}
       ref={ref}
-      className="fixed flex top-0 bottom-0 left-0 right-0 bg-[#0a1121bf] h-full w-full z-1 justify-center items-center">
+      className="fixed hidden top-0 bottom-0 left-0 
+                  right-0 bg-[#0a1121bf] h-full w-full z-1 justify-center items-center">
       {props.children}
     </div>
-  )
-})
+  );
+});
 
 const CloseModal = (e) => {
   e.stopPropagation()
@@ -28,4 +20,8 @@ const CloseModal = (e) => {
     e.target.classList.remove("flex")
   )
   e.target.classList.add("hidden")
-}
+};
+
+export default Modal;
+
+
