@@ -24,13 +24,24 @@ import { FaYoutube } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { LiMenu } from "./componentes/li-menu";
 import { ModalMenu } from "./componentes/card-menu"
-import { Modal } from "./componentes/modal";
+import Modal from "./componentes/modal";
 import { CardModal } from "./card_modal";
 import { TitleModal } from "./componentes/titleModal";
 import { SelectCountry } from "./componentes/dinaComponentes/select";
 import { CustomSelect } from "./componentes/customSelect";
+import { useRef } from "react";
 
 function App() {
+
+  const modalRef = useRef(null)
+
+  const handleOpenModal = () => {
+    if (modalRef.current) {
+      modalRef.current.classList.contains("hidden")
+        ? modalRef.current.classList.remove("hidden") : modalRef.current.classList.add("hidden")
+      modalRef.current.classList.add("flex")
+    }
+  }
 
   return (
     < div>
@@ -55,7 +66,7 @@ function App() {
               <CiHeart className="size-7" />
               Favoritos
             </LiMenu>
-            <LiMenu>
+            <LiMenu onClick={handleOpenModal}>
               <TfiWorld className="size-5" />
               PT.
               <LuEuro />
@@ -541,11 +552,13 @@ function App() {
           </div>
         </div>
       </footer>
-      <Modal>
+      <Modal
+        ref={modalRef}
+      >
         <CardModal>
           <TitleModal>
             <h1 className="text-[#000] text-base font-bold">Selecione o idioma e a moeda</h1>
-            <span className="text-[#000] text-base font-bold cursor-pointer">X</span>
+            <span onClick={handleOpenModal} className="text-[#000] text-base font-bold cursor-pointer">X</span>
           </TitleModal>
           <CustomSelect className="px-6">
             <h1 className="text-xs text-[#0a1121]">Idioma</h1>
