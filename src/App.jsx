@@ -48,7 +48,7 @@ function App() {
       <header>
         <div className="flex justify-between items-center h-13 px-48">
           <h1 className="">
-            <img className="w-28 h-full" src={logoTrivago} alt="Logo trivago" title="Logo trivago" />
+            <img className="w-28 h-auto" src={logoTrivago} alt="Logo trivago" title="Logo trivago" />
           </h1>
           <ul className="flex">
 
