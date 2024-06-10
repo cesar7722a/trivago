@@ -57,8 +57,8 @@ function App() {
                 <RxCounterClockwiseClock className="size-5" />
                 Visualizações recentes
               </di>
-              <ModalMenu>
-                <span>card</span>
+              <ModalMenu className="">
+                <span className="px-20 py-4">card rrrrrrr</span>
               </ModalMenu>
             </LiMenu>
 
@@ -80,8 +80,8 @@ function App() {
                 <RiMenuLine className="size-5" />
                 Menu
               </di>
-              <ModalMenu className="w-6 h-12">
-                visualizações
+              <ModalMenu>
+                <span >visualizações</span>
               </ModalMenu>
             </LiMenu>
           </ul>
