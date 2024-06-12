@@ -48,7 +48,7 @@ function App() {
       <header>
         <div className="flex justify-between items-center h-13 px-48">
           <h1 className="">
-            <img className="w-28 h-full" src={logoTrivago} alt="Logo trivago" title="Logo trivago" />
+            <img className="w-28 h-auto" src={logoTrivago} alt="Logo trivago" title="Logo trivago" />
           </h1>
           <ul className="flex">
 
@@ -57,8 +57,8 @@ function App() {
                 <RxCounterClockwiseClock className="size-5" />
                 Visualizações recentes
               </di>
-              <ModalMenu>
-                <span>card</span>
+              <ModalMenu className="">
+                <span className="px-20 py-4">card rrrrrrr</span>
               </ModalMenu>
             </LiMenu>
 
@@ -80,8 +80,8 @@ function App() {
                 <RiMenuLine className="size-5" />
                 Menu
               </di>
-              <ModalMenu className="w-6 h-12">
-                visualizações
+              <ModalMenu>
+                <span >visualizações</span>
               </ModalMenu>
             </LiMenu>
           </ul>
