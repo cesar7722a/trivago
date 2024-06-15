@@ -29,6 +29,7 @@ import { CardModal } from "./card_modal";
 import { TitleModal } from "./componentes/titleModal";
 import { SelectCountry } from "./componentes/dinaComponentes/select";
 import { CustomSelect } from "./componentes/customSelect";
+import { IoMdSearch } from "react-icons/io";
 import { useRef } from "react";
 
 function App() {
@@ -57,8 +58,19 @@ function App() {
                 <RxCounterClockwiseClock className="size-5" />
                 Visualizações recentes
               </di>
-              <ModalMenu className="">
-                <span className="px-20 py-4">card rrrrrrr</span>
+              <ModalMenu>
+                <div className="flex flex-col px-10">
+                  <div className="flex items-center">
+                    <section className="flex flex-col">
+                      <span>Estados Unidos da America</span>
+                      <span>15 jun. - 16 jun. 2 hóspedes, 1 quarto</span>
+                    </section>
+                    <IoMdSearch />
+                  </div>
+                  <div>
+                    <span>Ver mais</span>
+                  </div>
+                </div>
               </ModalMenu>
             </LiMenu>
 
@@ -81,7 +93,7 @@ function App() {
                 Menu
               </di>
               <ModalMenu>
-                <span >visualizações</span>
+                <span className="py-5">visualizações</span>
               </ModalMenu>
             </LiMenu>
           </ul>
